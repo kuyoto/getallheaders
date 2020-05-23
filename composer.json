@@ -1,0 +1,31 @@
+{
+    "name": "kuyoto/getallheaders",
+    "description": "Provides a polyfill for the getallheaders function.",
+    "keywords": [
+        "polyfill",
+        "compatibility",
+        "request",
+        "getallheaders"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/kuyoto/getallheaders",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tolulope Kuyoro",
+            "email": "nifskid1999@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 7"
+    },
+    "autoload": {
+        "files": [
+            "src/getallheaders.php"
+        ]
+    }
+}
