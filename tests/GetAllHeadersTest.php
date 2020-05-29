@@ -1,17 +1,17 @@
 <?php
 
 /**
- * kuyoto getallheaders (https://github.com/kuyoto/getallheaders/)
+ * kuyoto getallheaders (https://github.com/kuyoto/getallheaders/).
  *
  * PHP version 5 and 7
  *
  * @category  Library
- * @package   kuyoto\getallheaders
+ *
  * @author    Tolulope Kuyoro <nifskid1999@gmail.com>
  * @copyright 2020 Tolulope Kuyoro <nifskid1999@gmail.com>
  * @license   http://www.opensource.org/licenses/mit-license.php (MIT License)
- * @version   GIT: master
- * @link      https://github.com/kuyoto/getallheaders/
+ *
+ * @see      https://github.com/kuyoto/getallheaders/
  */
 
 declare(strict_types=1);
@@ -24,21 +24,23 @@ use PHPUnit\Framework\TestCase;
  * GetAllHeaders test.
  *
  * @category Library
- * @package  kuyoto\getallheaders
+ *
  * @author   Tolulope Kuyoro <nifskid1999@gmail.com>
  * @license  http://www.opensource.org/licenses/mit-license.php (MIT License)
- * @link     https://github.com/kuyoto/getallheaders/
+ *
+ * @see     https://github.com/kuyoto/getallheaders/
+ *
+ * @internal
+ * @coversNothing
  */
 class GetAllHeadersTest extends TestCase
 {
     /**
-     * GetAllHeadersTest::testGetAllHeaders()
+     * GetAllHeadersTest::testGetAllHeaders().
      *
-     * @param string $testType The test type.
-     * @param string $expected The expected data.
-     * @param string $server   The server.
-     *
-     * @return void
+     * @param string $testType the test type
+     * @param string $expected the expected data
+     * @param array  $server   the server
      *
      * @dataProvider headerProvider
      */
@@ -59,7 +61,7 @@ class GetAllHeadersTest extends TestCase
     }
 
     /**
-     * GetAllHeadersTest::headerProvider()
+     * GetAllHeadersTest::headerProvider().
      *
      * @return array
      */
@@ -69,13 +71,13 @@ class GetAllHeadersTest extends TestCase
             [
                 'normal case',
                 [
-                    'Key-One'                 => 'foo',
-                    'Key-Two'                 => 'bar',
+                    'Key-One' => 'foo',
+                    'Key-Two' => 'bar',
                     'Another-Key-For-Testing' => 'baz',
                 ],
                 [
-                    'HTTP_KEY_ONE'                 => 'foo',
-                    'HTTP_KEY_TWO'                 => 'bar',
+                    'HTTP_KEY_ONE' => 'foo',
+                    'HTTP_KEY_TWO' => 'bar',
                     'HTTP_ANOTHER_KEY_FOR_TESTING' => 'baz',
                 ],
             ],
